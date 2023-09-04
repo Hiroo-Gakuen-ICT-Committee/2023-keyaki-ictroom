@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Shippori Mincho', serif;
-    background-color: #ffffff;
+    background-color: #f8fbff;
 }
 
 .section {
@@ -75,7 +75,7 @@ body {
 
 
 #congestion {
-    background-color: #ffffff;
+    background-color: #f8fbff;
 }
 
 .congestion-content {
@@ -109,7 +109,7 @@ body {
 
 
 #production {
-    background-color: #ffffff;
+    background-color: #f8fbff;
 }
 
 .production-content {
@@ -188,7 +188,7 @@ body {
 
 
 #activity {
-    background-color: #ffffff;
+    background-color: #f8fbff;
 }
 
 .activity-content {
@@ -221,7 +221,7 @@ body {
 
 .activity-images img {
     width: 30vw;
-    height: 30vh;
+    height: 70vh;
     margin-left: 2vw;
 }
 
@@ -233,6 +233,7 @@ body {
 #pv {
     justify-content: center;
     align-items: center;
+    color: #f8fbff;
 }
 
 .pv-content {
@@ -259,7 +260,7 @@ body {
 
 
 #map {
-    background-color: #ffffff;
+    background-color: #f8fbff;
 }
 
 .map-content {
@@ -290,10 +291,16 @@ body {
     margin-left: 10vw;
 }
 
+p {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
 h1 {
     text-align: center;
     color: black;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Shippori Mincho', serif;
 }
 
@@ -307,7 +314,7 @@ h2 {
 h3 {
     text-align: left;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Shippori Mincho', serif;
 }
 
@@ -321,6 +328,12 @@ h5 {
     color: black;
     font-size: 40px;
     font-family: 'Shippori Mincho', serif;
+}
+
+span {
+    color: white;
+    font-size: 18px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
 #scrollToTopBtn {
@@ -409,4 +422,3 @@ h5 {
     line-height: 100px;
     margin-top: 1vh;
 }
-
