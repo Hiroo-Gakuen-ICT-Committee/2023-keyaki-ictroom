@@ -8,7 +8,6 @@ body {
 }
 
 .section {
-    height: 100vh;
     display: flex;
     background-size: cover;
 }
@@ -17,14 +16,25 @@ body {
     background-image: url('top.jpg');
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .logo {
-    width: 10vw;
-    height: 20vh;
+    width: 10%;
+    height: 20%;
     position: absolute;
     top: 1rem;
     left: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 20%;
+        height: 15%;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
 }
 
 .slide-in {
@@ -55,9 +65,11 @@ body {
 
 .about-content {
     text-align: center;
+    height: 100vh;
 }
 
 .about-content h1 {
+    margin-top: 25vh;
     text-align: center;
     color: #ffffff;
 }
@@ -85,20 +97,16 @@ body {
 }
 
 .congestion-title {
-    background-color: #ddd;
-    color: #333;
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    margin-bottom: 2rem;
-    height: 10vh;
     width: 20vw;
+    border-left: 5px solid #000;
+    background: #f4f4f4;
 }
 
 .congestion-image img {
-    width: 30vw;
-    height: 60vh;
+    width: 50%;
+    height: 100%;
     border-radius: 10px;
-    margin-left: 30vw;
+    margin-left: 25vw;
 }
 
 .congestion-update {
@@ -107,35 +115,32 @@ body {
     margin-left: 30vw;
 }
 
-
 #production {
     background-color: #f8fbff;
+    width: 100%;
 }
 
 .production-content {
     padding: 4rem 0;
     text-align: left;
-    margin-left: 5vw;
 }
 
 .production-title {
-    background-color: #ddd;
-    color: #333;
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    margin-bottom: 2rem;
-    height: 10vh;
+    margin-left: 5vw;
     width: 20vw;
+    border-left: 5px solid #000;
+    background: #f4f4f4;
 }
 
 .carousel-container {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     overflow: hidden;
     position: relative;
-    margin-left: 20vw;
+    margin-left: 60%;
 }
 
 .carousel-frame {
@@ -153,7 +158,7 @@ body {
 
 .carousel-frame img {
     width: 100%;
-    max-height: 40%;
+    height: 40vh;
     border-radius: 10px 10px 0 0;
 }
 
@@ -186,7 +191,6 @@ body {
 }
 
 
-
 #activity {
     background-color: #f8fbff;
 }
@@ -195,17 +199,15 @@ body {
     padding: 4rem 0;
     text-align: left;
     margin-left: 5vw;
+    width: 100%;
 }
 
 .activity-title {
-    background-color: #ddd;
-    color: #333;
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    margin-bottom: 2rem;
-    height: 10vh;
     width: 20vw;
+    border-left: 5px solid #000;
+    background: #f4f4f4;
 }
+
 
 .activity-main {
     display: flex;
@@ -217,12 +219,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
-.activity-images img {
-    width: 30vw;
-    height: 70vh;
-    margin-left: 2vw;
+    width: 30%;
 }
 
 .activity-description {
@@ -236,19 +233,11 @@ body {
     color: #f8fbff;
 }
 
-.pv-content {
-    padding: 4rem 0;
-    margin-left: 5vw;
-}
-
 .pv-title {
-    background-color: #ddd;
-    color: #333;
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    margin-bottom: 2rem;
-    height: 10vh;
     width: 20vw;
+    border-left: 5px solid #000;
+    background: #f4f4f4;
+    margin-left: 5vw;
 }
 
 .pv-video {
@@ -264,24 +253,18 @@ body {
 }
 
 .map-content {
-    padding: 4rem 0;
     text-align: left;
     margin-left: 5vw;
 }
 
 .map-title {
-    background-color: #ddd;
-    color: #333;
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    margin-bottom: 2rem;
-    height: 10vh;
     width: 20vw;
+    border-left: 5px solid #000;
+    background: #f4f4f4;
 }
 
 .map-image img {
-    width: 70vw;
-    height: 60vh;
+    width: 70%;
     margin-left: 10vw;
 }
 
@@ -294,27 +277,27 @@ body {
 p {
     color: black;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 h1 {
     text-align: center;
     color: black;
-    font-size: 40px;
+    font-size: 2.5em;
     font-family: 'Shippori Mincho', serif;
 }
 
 h2 {
     text-align: center;
     color: black;
-    font-size: 20px;
+    font-size: 1.2em;
     font-family: 'Shippori Mincho', serif;
 }
 
 h3 {
-    text-align: left;
+    text-align: center;
     color: black;
-    font-size: 15px;
+    font-size: 1.5em;
     font-family: 'Shippori Mincho', serif;
 }
 
@@ -323,16 +306,31 @@ a {
     text-decoration: none;
 }
 
-h5 {
-    text-align: center;
+h4 {
+    text-align: left;
     color: black;
-    font-size: 40px;
+    font-size: 1.25em;
     font-family: 'Shippori Mincho', serif;
 }
 
+h5 {
+    text-align: center;
+    color: black;
+    font-size: 2.5em;
+    font-family: 'Shippori Mincho', serif;
+}
+
+h6 {
+    color: black;
+    font-size: 1.25em;
+    font-family: 'Shippori Mincho', serif;
+    margin-left: 10vw;
+}
+
+
 span {
     color: white;
-    font-size: 18px;
+    font-size: 1.2em;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 
@@ -363,7 +361,6 @@ span {
 
 .site-footer {
     background-color: #f0f0f0;
-    padding: 20px;
     text-align: center;
 }
 
@@ -372,53 +369,132 @@ span {
     margin: 0 auto;
 }
 
-.footer-line {
-    border: 0;
-    border-top: 1px solid #ccc;
+.about-content h2 {
+    text-align: left;
 }
 
-.sns-buttons {
-    text-align: center;
+.copyright {
+    display: flex;
+    margin-left: 5vw;
 }
 
-.sns-button {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
+/* レスポンシブ */
+@media screen and (max-width: 768px) {
+    .activity-title {
+        width: 80%;
+    }
 
-.sns-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
+    .activity-main {
+        flex-direction: column;
+        gap: 1rem;
+    }
 
-.twitter {
-    background-color: black;
-    color: white;
-}
+    .activity-images {
+        width: 75%;
+    }
 
-.instagram {
-    background-color: #C13584;
-    color: white;
-}
+    .activity-description {
+        font-size: 12px;
+    }
 
-.facebook {
-    background-color: #1877F2;
-    color: white;
-}
+    .congestion-title {
+        width: 80%;
+    }
+    .congestion-image img {
+        width: 50%;
+        height: 100%;
+        border-radius: 10px;
+        margin-left: 25vw;
+    }
 
-.line {
-    background-color: #00B900;
-    color: white;
-}
+    .production-title {
+        width: 80%;
+    }
 
-.sns-icon {
-    font-size: 40px;
-    line-height: 100px;
-    margin-top: 1vh;
+    .pv-title {
+        width: 80%;
+    }
+
+    .map-title {
+        width: 80%;
+    }
+
+    .congestion-update {
+        margin-top: 1rem;
+        color: #666;
+    }
+
+    .carousel-container {
+        margin-left: 0%;
+    }
+
+    .carousel-frame {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .carousel-frame img {
+        height: 30vh;
+    }
+
+    p {
+        color: black;
+        text-align: center;
+        font-size: 1.2em;
+    }
+    
+    h1 {
+        text-align: center;
+        color: black;
+        font-size: 2.5em;
+        font-family: 'Shippori Mincho', serif;
+    }
+    
+    h2 {
+        text-align: center;
+        color: black;
+        font-size: 0.75em;
+        font-family: 'Shippori Mincho', serif;
+    }
+    
+    h3 {
+        text-align: center;
+        color: black;
+        font-size: 1.5em;
+        font-family: 'Shippori Mincho', serif;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    h4 {
+        text-align: left;
+        color: black;
+        font-size: 1em;
+        font-family: 'Shippori Mincho', serif;
+    }
+    
+    h5 {
+        text-align: center;
+        color: black;
+        font-size: 2.5em;
+        font-family: 'Shippori Mincho', serif;
+    }
+    
+    h6 {
+        color: black;
+        font-size: 1.25em;
+        font-family: 'Shippori Mincho', serif;
+        margin-left: 10vw;
+    }
+
+    .about-content h2 {
+        text-align: center;
+        color: #ffffff;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
 }
