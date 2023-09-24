@@ -112,7 +112,7 @@ body {
 .congestion-update {
     margin-top: 1rem;
     color: #666;
-    margin-left: 30vw;
+    margin-left: 20vw;
 }
 
 #production {
@@ -423,6 +423,7 @@ span {
     .congestion-update {
         margin-top: 1rem;
         color: #666;
+        margin-left: 20vw;
     }
 
     .carousel-container {
