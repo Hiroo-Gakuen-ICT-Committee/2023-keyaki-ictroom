@@ -261,6 +261,7 @@ body {
     width: 20vw;
     border-left: 5px solid #000;
     background: #f4f4f4;
+    text-align: left;
 }
 
 .map-image img {
